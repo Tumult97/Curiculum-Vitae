@@ -1,0 +1,12 @@
+@import "../../../node_modules/angular-bootstrap-md/scss/core/colors";
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+
+.jumbotron-fluid {
+  background-color: $amber-darken-1;
+  color: #FFF;
+  height: 8%;
+  padding: 2em;
+  font-family: "Ubuntu Mono", "serif";
+  border-bottom: white 2px;
+}
