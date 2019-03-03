@@ -9,8 +9,17 @@ import { HighlightResult } from 'ngx-highlightjs';
 export class HardSkillsComponent implements OnInit {
   response: HighlightResult;
 
-  javacode = 'import java.util.Random; Random rand = new Random(); // Obtain a number between [0 - 49]. int n = rand.nextInt(50); ' +
-    '// Add 1 to the result to get a number from the required range // (i.e., [1 - 50]). n += 1;';
+  javacode = 'public static void main(String[] args) {\n' +
+    '\n' +
+    '        int num = 100, sum = 0;\n' +
+    '\n' +
+    '        for(int i = 1; i <= num; ++i)\n' +
+    '        {\n' +
+    '            sum += i;\n' +
+    '        }\n' +
+    '\n' +
+    '        System.out.println("Sum = " + sum);\n' +
+    '    }';
 
   code = `function myFunction() {
   document.getElementById("demo1").innerHTML = "Hello there!";
