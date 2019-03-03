@@ -1,3 +1,23 @@
-<p>
-  hard-skills works!
-</p>
+<mdb-card-title style="text-align: center">
+  <h2 style="text-align: center">Hard Skills</h2>
+</mdb-card-title>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+      <mdb-card>
+        <div class="row">
+          <div class="col-sm-4 text-div java_parent">
+            <div class="java_child">
+              <span>Java</span>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <pre>
+              <code [highlight]="code" (highlighted)="onHighlight($event)" class="monokai z-depth-2"></code>
+            </pre>
+          </div>
+        </div>
+      </mdb-card>
+    </div>
+  </div>
+</div>

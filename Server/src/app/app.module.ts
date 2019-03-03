@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -7,7 +7,6 @@ import {MDBBootstrapModule} from 'angular-bootstrap-md';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
-import {RouterModule} from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { SkillsComponent } from './skills/skills.component';
 import { AboutComponent } from './about/about.component';
@@ -23,6 +22,18 @@ import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 import {MatButtonModule, MatIconModule, MatListModule, MatNativeDateModule, MatSidenavModule, MatToolbarModule} from '@angular/material';
 import {CommonModule} from '@angular/common';
+import { NavbarComponent } from './navbar/navbar.component';
+import {HighlightModule} from 'ngx-highlightjs';
+
+import java from 'highlight.js/lib/languages/java';
+import javascript from 'highlight.js/lib/languages/javascript';
+
+export function hljsLanguages() {
+  return [
+    {name: 'java', func: java},
+    {name: 'javascript', func: javascript}
+  ];
+}
 
 @NgModule({
   declarations: [
@@ -39,7 +50,8 @@ import {CommonModule} from '@angular/common';
     SecondaryEducationComponent,
     RefereesComponent,
     ContentComponent,
-    FooterComponent
+    FooterComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +66,10 @@ import {CommonModule} from '@angular/common';
     MatIconModule,
     MatSidenavModule,
     MatListModule,
-    MatToolbarModule
+    MatToolbarModule,
+    HighlightModule.forRoot({
+      languages: hljsLanguages
+    })
   ],
   exports: [
     CommonModule,

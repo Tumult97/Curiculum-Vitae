@@ -1,0 +1,18 @@
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark z-depth-0 amber darken-2" style="align-items: center">
+  <links style="align-self: center; align-items: center; width: 100%">
+    <ul style="align-self: center" class="navbar-nav mr-auto">
+      <li class="nav-item" [ngClass]="{'selected': route == 'about'}">
+        <a class="nav-link waves-light" (click)="navClick('about')" mdbWavesEffect routerLink="/about">About</a>
+      </li>
+      <li class="nav-item" [ngClass]="{'selected': route == 'skill'}">
+        <a class="nav-link waves-light" (click)="navClick('skill')" mdbWavesEffect routerLink="/skills">Skills</a>
+      </li>
+      <li class="nav-item" [ngClass]="{'selected': route == 'edu'}">
+        <a class="nav-link waves-light" (click)="navClick('edu')" mdbWavesEffect routerLink="/education">Educational Background</a>
+      </li>
+      <li class="nav-item" [ngClass]="{'selected': route == 'work'}">
+        <a class="nav-link waves-light" (click)="navClick('work')" mdbWavesEffect routerLink="/employment">Work History</a>
+      </li>
+    </ul>
+  </links>
+</mdb-navbar>
