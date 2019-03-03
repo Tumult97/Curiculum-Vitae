@@ -1,0 +1,12 @@
+@import "../../../node_modules/angular-bootstrap-md/scss/core/colors";
+
+.selected {
+  background-color: $amber-darken-1;
+  border-radius: 7px;
+}
+
+.nav-item {
+  padding: 3px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
