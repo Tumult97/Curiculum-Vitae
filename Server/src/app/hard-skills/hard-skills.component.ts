@@ -10,21 +10,39 @@ export class HardSkillsComponent implements OnInit {
   response: HighlightResult;
 
   javacode = 'public static void main(String[] args) {\n' +
-    '\n' +
-    '        int num = 100, sum = 0;\n' +
-    '\n' +
-    '        for(int i = 1; i <= num; ++i)\n' +
-    '        {\n' +
-    '            sum += i;\n' +
-    '        }\n' +
-    '\n' +
-    '        System.out.println("Sum = " + sum);\n' +
-    '    }';
+    '    int num = 100, sum = 0;\n' +
+    '    for(int i = 1; i <= num; ++i)\n' +
+    '    {\n' +
+    '        sum += i;\n' +
+    '    }\n' +
+    '    System.out.println("Sum = " + sum);\n' +
+    '}';
 
-  code = `function myFunction() {
-  document.getElementById("demo1").innerHTML = "Hello there!";
-  document.getElementById("demo2").innerHTML = "How are you?";
-}`;
+  javascriptcode = 'var close = document.getElementsByClassName("closebtn");\n' +
+    'for (var i = 0; i < close.length; i++) {\n' +
+    '    close[i].onclick = function(){\n' +
+    '        var customAlert = this.parentElement;\n' +
+    '        customAlert.style.opacity = "0";\n' +
+    '        setTimeout(function(){ customAlert.style.display = "none"; }, 600);\n' +
+    '    }\n' +
+    '}';
+
+  webcode = '<div class="col-sm">\n' +
+    '    <h5 class="label-1 label-detail-1">Total Time Entries: <label id="totalEntries"></label></h5>\n' +
+    '</div>\n' +
+    '<div class="col-sm">\n' +
+    '    <h5 class="label-1 label-detail-1">\n' +
+    '        Total Hours Spent: <label id="totalHours"></label>\n' +
+    '    </h5>\n' +
+    '</div>';
+
+  angularcode = '@Component({\n' +
+    '  selector: \'app-hard-skills\',\n' +
+    '  templateUrl: \'./hard-skills.component.html\',\n' +
+    '  styleUrls: [\'./hard-skills.component.scss\'],\n' +
+    '})\n' +
+    'export class HardSkillsComponent implements OnInit {\n' +
+    '  response: HighlightResult;';
 
   constructor() { }
 

@@ -27,11 +27,17 @@ import {HighlightModule} from 'ngx-highlightjs';
 
 import java from 'highlight.js/lib/languages/java';
 import javascript from 'highlight.js/lib/languages/javascript';
+import xml from 'highlight.js/lib/languages/xml';
+import cs from 'highlight.js/lib/languages/cs';
+import typescript from 'highlight.js/lib/languages/typescript';
 
 export function hljsLanguages() {
   return [
     {name: 'java', func: java},
-    {name: 'javascript', func: javascript}
+    {name: 'javascript', func: javascript},
+    {name: 'xml', func: xml},
+    {name: 'cs', func: cs},
+    {name: 'typescript', func: typescript}
   ];
 }
 

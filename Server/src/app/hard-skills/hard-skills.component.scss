@@ -8,10 +8,9 @@
   text-align: center;
 }
 
-span {
-  display: inline-block;
-  vertical-align: middle;
-  line-height: normal;
+mdb-card {
+  line-height: 1;
+  margin: 0.5em;
 }
 
 .java_parent {
@@ -22,13 +21,17 @@ span {
 .java_child {
   display: table-cell;
   vertical-align: middle;
+  height: 100%;
 }
 
 pre {
-  overflow-x: auto;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
   white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
   word-wrap: break-word;
-  height: fit-content;
 }
 
 .monokai {
@@ -37,13 +40,18 @@ pre {
   margin-right: 1em;
   height: 100%;
   border-radius: 10px;
+  padding-right: 0;
+  font-size: smaller;
 }
 
 .scroll {
   position: relative;
+  height: 100%;
   overflow-y: scroll;
 }
 
-mdb-card {
-  height: min-content;
+.full_height {
+  height: 100%;
 }
+
+
