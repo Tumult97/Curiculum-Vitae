@@ -30,6 +30,8 @@ import javascript from 'highlight.js/lib/languages/javascript';
 import xml from 'highlight.js/lib/languages/xml';
 import cs from 'highlight.js/lib/languages/cs';
 import typescript from 'highlight.js/lib/languages/typescript';
+import vbnet from 'highlight.js/lib/languages/vbnet';
+import vbscript from 'highlight.js/lib/languages/vbscript';
 
 export function hljsLanguages() {
   return [
@@ -37,7 +39,9 @@ export function hljsLanguages() {
     {name: 'javascript', func: javascript},
     {name: 'xml', func: xml},
     {name: 'cs', func: cs},
-    {name: 'typescript', func: typescript}
+    {name: 'typescript', func: typescript},
+    {name: 'vbnet', func: vbnet},
+    {name: 'vbscript', func: vbscript}
   ];
 }
 
