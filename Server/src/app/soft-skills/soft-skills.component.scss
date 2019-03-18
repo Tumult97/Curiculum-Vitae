@@ -16,7 +16,8 @@ h4{
 }
 
 h5{
-  padding-top: 10px;
+  padding-top: 1.5em;
+  padding-bottom: 0.85em;
 }
 
 h5{
@@ -24,16 +25,24 @@ h5{
 }
 
 img{
-  height: 10em;
+  height: 5.5em;
 }
 /*#endregion*/
 
 /*#region Visual Styling*/
 .skill-card-table {
   width: 100%;
+  background-color: #212121;
+  border-radius: 1em;
 }
 
-.skill-card-cell{
+.skill-card-cell-third{
+  width: 33.33%;
+  text-align: center;
+  padding: 1em;
+}
+
+.skill-card-cell-half{
   width: 50%;
   text-align: center;
   padding: 1em;
@@ -42,6 +51,12 @@ img{
 .card-title-table{
   text-align: center;
   width: 100%;
+}
+
+.table-card {
+  padding-right: 0.25em;
+  padding-left: 0.25em;
+  padding-bottom: 1.7em;
 }
 /*#endregion */
 
