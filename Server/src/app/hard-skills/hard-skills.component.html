@@ -1,21 +1,211 @@
-<mdb-card-title style="text-align: center">
-  <h2 style="text-align: center">Hard Skills</h2>
+<mdb-card-title>
+  <h4>Hard Skills</h4>
 </mdb-card-title>
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-12">
       <mdb-card>
         <div class="row">
-          <div class="col-sm-4 text-div java_parent">
-            <div class="java_child">
-              <span>Java</span>
-            </div>
-          </div>
-          <div class="col-sm-8">
-            <pre>
-              <code [highlight]="code" (highlighted)="onHighlight($event)" class="monokai z-depth-2"></code>
+          <table class="card-title-table">
+            <tr>
+              <td></td>
+              <td>
+                <h5>
+                  <mdb-icon fab icon="java"></mdb-icon>
+                  Java Full Stack
+                </h5>
+              </td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+        <div>
+            <pre class="pre-code-full">
+              <code class="code-full monokai z-depth-2" [highlight]="javacode" (highlighted)="onHighlight($event)"></code>
             </pre>
-          </div>
+        </div>
+      </mdb-card>
+      <mdb-card>
+        <div class="row">
+          <table class="card-title-table">
+            <tr>
+              <td></td>
+              <td>
+                <h5>
+                  <mdb-icon fab icon="js-square"></mdb-icon>
+                  Javascript
+                </h5>
+              </td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+        <div>
+            <pre class="pre-code-full">
+              <code class="code-full monokai z-depth-2" [highlight]="javascriptcode" (highlighted)="onHighlight($event)"></code>
+            </pre>
+        </div>
+      </mdb-card>
+      <mdb-card>
+        <div class="row">
+          <table class="card-title-table">
+            <tr>
+              <td></td>
+              <td>
+                <h5>
+                  <mdb-icon fab icon="html5"></mdb-icon>
+                  Web Development
+                  <mdb-icon fab icon="css3-alt"></mdb-icon>
+                </h5>
+              </td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <table class="skill-card-table">
+            <tr>
+              <td class="skill-card-cell">
+                  <pre class="pre-code-left">
+                    <code class="code-full monokai z-depth-2" [highlight]="webcode" (highlighted)="onHighlight($event)"></code>
+                  </pre>
+              </td>
+              <td class="skill-card-cell">
+                  <pre class="pre-code-right">
+                    <code class="code-full monokai z-depth-2" [highlight]="css" (highlighted)="onHighlight($event)"></code>
+                  </pre>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </mdb-card>
+      <mdb-card>
+        <div class="row">
+          <table class="card-title-table">
+            <tr>
+              <td></td>
+              <td>
+                <h5>
+                  <mdb-icon fab icon="angular"></mdb-icon>
+                  Angular
+                  <mdb-icon fab icon="sass"></mdb-icon>
+                </h5>
+              </td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <table class="skill-card-table">
+            <tr>
+              <td class="skill-card-cell">
+                  <pre class="pre-code-left">
+                    <code class="code-full monokai z-depth-2" [highlight]="angularcode" (highlighted)="onHighlight($event)"></code>
+                  </pre>
+              </td>
+              <td class="skill-card-cell">
+                  <pre class="pre-code-right">
+                    <code class="code-full monokai z-depth-2" [highlight]="angularfront" (highlighted)="onHighlight($event)"></code>
+                  </pre>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </mdb-card>
+      <mdb-card>
+        <div class="row">
+          <table class="card-title-table">
+            <tr>
+              <td></td>
+              <td>
+                <h5>
+                  <mdb-icon fas icon="code"></mdb-icon>
+                  C# and ASP.Net
+                </h5>
+              </td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <table class="skill-card-table">
+            <tr>
+              <td class="skill-card-cell">
+                  <pre class="pre-code-left">
+                    <code class="code-full monokai z-depth-2" [highlight]="aspfront" (highlighted)="onHighlight($event)"></code>
+                  </pre>
+              </td>
+              <td class="skill-card-cell">
+                  <pre class="pre-code-right">
+                    <code class="code-full monokai z-depth-2" [highlight]="aspback" (highlighted)="onHighlight($event)"></code>
+                  </pre>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </mdb-card>
+      <mdb-card>
+        <div class="row">
+          <table class="card-title-table">
+            <tr>
+              <td></td>
+              <td>
+                <h5>
+                  <mdb-icon fas icon="code"></mdb-icon>
+                  VB and VB.Net
+                </h5>
+              </td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <table class="skill-card-table">
+            <tr>
+              <td class="skill-card-cell">
+                  <pre class="pre-code-left">
+                    <code class="code-full monokai z-depth-2" [highlight]="vbcode" (highlighted)="onHighlight($event)"></code>
+                  </pre>
+              </td>
+              <td class="skill-card-cell">
+                  <pre class="pre-code-right">
+                    <code class="code-full monokai z-depth-2" [highlight]="aspfront" (highlighted)="onHighlight($event)"></code>
+                  </pre>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </mdb-card>
+      <mdb-card>
+        <div class="row">
+          <table class="card-title-table">
+            <tr>
+              <td></td>
+              <td>
+                <h5>
+                  <mdb-icon fab icon="android"></mdb-icon>
+                  Android Development
+                </h5>
+              </td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <table class="skill-card-table">
+            <tr>
+              <td class="skill-card-cell">
+                  <pre class="pre-code-left">
+                    <code class="code-full monokai z-depth-2" [highlight]="androidback" (highlighted)="onHighlight($event)"></code>
+                  </pre>
+              </td>
+              <td class="skill-card-cell">
+                  <pre class="pre-code-right">
+                    <code class="code-full monokai z-depth-2" [highlight]="androidfront" (highlighted)="onHighlight($event)"></code>
+                  </pre>
+              </td>
+            </tr>
+          </table>
         </div>
       </mdb-card>
     </div>

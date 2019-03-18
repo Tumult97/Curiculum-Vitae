@@ -1,18 +1,25 @@
-<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark z-depth-0 amber darken-2" style="align-items: center">
-  <links style="align-self: center; align-items: center; width: 100%">
-    <ul style="align-self: center" class="navbar-nav mr-auto">
-      <li class="nav-item" [ngClass]="{'selected': route == 'about'}">
-        <a class="nav-link waves-light" (click)="navClick('about')" mdbWavesEffect routerLink="/about">About</a>
-      </li>
-      <li class="nav-item" [ngClass]="{'selected': route == 'skill'}">
-        <a class="nav-link waves-light" (click)="navClick('skill')" mdbWavesEffect routerLink="/skills">Skills</a>
-      </li>
-      <li class="nav-item" [ngClass]="{'selected': route == 'edu'}">
-        <a class="nav-link waves-light" (click)="navClick('edu')" mdbWavesEffect routerLink="/education">Educational Background</a>
-      </li>
-      <li class="nav-item" [ngClass]="{'selected': route == 'work'}">
-        <a class="nav-link waves-light" (click)="navClick('work')" mdbWavesEffect routerLink="/employment">Work History</a>
-      </li>
-    </ul>
-  </links>
-</mdb-navbar>
+<nav class="navbar navbar-expand-lg z-depth-0" role="navigation">
+  <div class="container">
+    <button mdbBtn id="navToggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar10" aria-expanded="false" aria-label="Toggle Navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbar10">
+      <ul class="navbar-nav nav-fill w-100">
+        <li class="nav-item" [ngClass]="{'selected': route == 'about'}">
+          <a class="nav-link waves-light" (click)="navClick('about')" mdbWavesEffect routerLink="/about"><mdb-icon fas icon="info-circle"></mdb-icon> About</a>
+        </li>
+        <li class="nav-item" [ngClass]="{'selected': route == 'skill'}">
+          <a class="nav-link waves-light" (click)="navClick('skill')" mdbWavesEffect routerLink="/skills"><mdb-icon fas icon="laptop-code"></mdb-icon> Skills</a>
+        </li>
+        <li class="nav-item" [ngClass]="{'selected': route == 'edu'}">
+          <a class="nav-link waves-light" (click)="navClick('edu')" mdbWavesEffect routerLink="/education"><mdb-icon fas icon="university"></mdb-icon> Educational Background</a>
+        </li>
+        <li class="nav-item" [ngClass]="{'selected': route == 'work'}">
+          <a class="nav-link waves-light" (click)="navClick('work')" mdbWavesEffect routerLink="/employment"><mdb-icon fas icon="briefcase"></mdb-icon> Work History</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+

@@ -1,19 +1,80 @@
 @import "~highlight.js/styles/github.css";
 
-.container-fluid {
-  padding-top: 1.5em;
+/*#region HTML Tags*/
+mdb-card {
+  line-height: 1;
+  margin: 1em 0.5em;
 }
 
-.text-div {
+pre {
+  margin: 0;
+  //padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  word-wrap: break-word;
+}
+
+h5{
+  padding-top: 1em;
+}
+
+h4{
+  text-align: center;
+  font-weight: bold;
+}
+
+mdb-card-title{
   text-align: center;
 }
+/*#endregion */
 
-span {
-  display: inline-block;
-  vertical-align: middle;
-  line-height: normal;
+/*#region  Visual styling*/
+.monokai {
+  background-color: #212121;
+  color: #FFFFFF;
+  margin-right: 1em;
+  height: 100%;
+  border-radius: 10px;
+  padding-right: 0;
+  font-size: smaller;
 }
 
+.scroll {
+  position: relative;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.full_height {
+  height: 100%;
+}
+
+.skill-card-table {
+  width: 100%;
+}
+
+.skill-card-cell{
+  width: 50%;
+}
+
+.card-title-table{
+  text-align: center;
+  width: 100%;
+}
+
+.background-accent{
+  background-color: #ffd793;
+}
+
+//.container-fluid{
+//   border: 5px red;
+//   background-color: #212121;
+// }
+/*#endregion*/
+
+/*#region Functional Styling*/
 .java_parent {
   display: table;
   height: 100%;
@@ -22,28 +83,50 @@ span {
 .java_child {
   display: table-cell;
   vertical-align: middle;
-}
-
-pre {
-  overflow-x: auto;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  height: fit-content;
-}
-
-.monokai {
-  background-color: #212121;
-  color: #FFFFFF;
-  margin-right: 1em;
   height: 100%;
-  border-radius: 10px;
 }
 
-.scroll {
-  position: relative;
-  overflow-y: scroll;
+.container-fluid {
+  padding-top: 1.5em;
 }
 
-mdb-card {
-  height: min-content;
+.text-div {
+  text-align: center;
 }
+/*#endregion*/
+
+/*#region Pre block styling*/
+.pre-code-full{
+  width: 100%;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+}
+
+.pre-code-left{
+  width: 100%;
+  padding-left: 0.25em;
+  padding-right: 0.125em;
+}
+
+.pre-code-right{
+  width: 100%;
+  padding-left: 0.125em;
+  padding-right: 0.25em;
+}
+/*#endregion */
+
+/*#region Code Block Styling*/
+.code-full{
+  width: 100%;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+}
+
+.code-left{
+
+}
+
+.code-right{
+
+}
+/*#endregion */

@@ -1,0 +1,67 @@
+@import "~highlight.js/styles/github.css";
+
+/*#region HTML Tags*/
+mdb-card-title{
+  text-align: center;
+}
+
+mdb-card{
+  line-height: 1;
+  margin: 1em 0.5em;
+}
+
+h4{
+  text-align: center;
+  font-weight: bold;
+}
+
+h5{
+  padding-top: 1.5em;
+  padding-bottom: 0.85em;
+}
+
+h5{
+  padding-top: 10px;
+}
+
+img{
+  height: 5.5em;
+}
+/*#endregion*/
+
+/*#region Visual Styling*/
+.skill-card-table {
+  width: 100%;
+  background-color: #212121;
+  border-radius: 1em;
+}
+
+.skill-card-cell-third{
+  width: 33.33%;
+  text-align: center;
+  padding: 1em;
+}
+
+.skill-card-cell-half{
+  width: 50%;
+  text-align: center;
+  padding: 1em;
+}
+
+.card-title-table{
+  text-align: center;
+  width: 100%;
+}
+
+.table-card {
+  padding-right: 0.25em;
+  padding-left: 0.25em;
+  padding-bottom: 1.7em;
+}
+/*#endregion */
+
+/*#region Functional Styling*/
+.container-fluid {
+  padding-top: 1.5em;
+}
+/*#endregion*/
