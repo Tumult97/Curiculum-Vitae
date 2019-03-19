@@ -4,11 +4,41 @@
       <button mdbBtn color="primary" class="waves-light" type="button" (click)="test.toggle()" mdbWavesEffect>
         Toggle collapse
       </button>
-
-      <div class="" mdbCollapse #test="bs-collapse">
-        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim
-          keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+    </div>
+    <div class="row" mdbCollapse #test="bs-collapse">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <table mdbTable class="z-depth-1">
+          <thead>
+          <tr>
+            <th>Unit Code</th>
+            <th>Title</th>
+            <th>Final Score</th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let unit of universityUnits">
+              <td>{{unit.unitCode}}</td>
+              <td>{{unit.unitTitle}}</td>
+              <td>
+                <circle-progress
+                  [percent]="unit.finalScore"
+                  [radius]="15"
+                  [outerStrokeWidth]="2"
+                  [outerStrokeColor]="'#ffa000'"
+                  [innerStrokeColor]="'#FFF'"
+                  [animation]="true"
+                  [animationDuration]="3"
+                  [showUnits]="false"
+                  [showSubtitle]="false"
+                  [titleFontSize]="12"
+                ></circle-progress>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
+      <div class="col-sm-1"></div>
     </div>
   </div>
 </div>
