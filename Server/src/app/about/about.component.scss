@@ -1,0 +1,29 @@
+@import "../../../node_modules/angular-bootstrap-md/scss/core/colors";
+
+table {
+    width: 100%;
+    font-size: 50px;
+}
+
+th {
+    font-weight: bold;
+}
+
+.justified-paragraph {
+    text-align: justify;
+}
+
+img {
+    border-radius: 50%;
+    height: 10em;
+}
+
+.img-responsive {
+    margin: 0 auto;
+}
+
+hr.divider {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), $amber-darken-3, rgba(0, 0, 0, 0));
+}
