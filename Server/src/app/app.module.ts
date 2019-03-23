@@ -32,6 +32,7 @@ import cs from 'highlight.js/lib/languages/cs';
 import typescript from 'highlight.js/lib/languages/typescript';
 import vbnet from 'highlight.js/lib/languages/vbnet';
 import vbscript from 'highlight.js/lib/languages/vbscript';
+import { HobbiesComponent } from './hobbies/hobbies.component';
 
 export function hljsLanguages() {
   return [
@@ -61,7 +62,8 @@ export function hljsLanguages() {
     RefereesComponent,
     ContentComponent,
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
+    HobbiesComponent
   ],
   imports: [
     BrowserModule,
