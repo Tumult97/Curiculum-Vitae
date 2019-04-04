@@ -136,7 +136,7 @@ export class EducationComponent implements OnInit, AfterViewInit {
         });
         this.universityUnits.push({
             unitTitle: 'Business Intelligence and Data Warehousing',
-            unitCode: 'FIR3003',
+            unitCode: 'FIT3003',
             unitDesc: 'Databases 3',
             finalScore: 58
         });
@@ -160,7 +160,7 @@ export class EducationComponent implements OnInit, AfterViewInit {
         });
         this.universityUnits.push({
             unitTitle: 'Business Information Systems and Processes',
-            unitCode: 'FIR2090',
+            unitCode: 'FIT2090',
             unitDesc: '',
             finalScore: 58
         });
