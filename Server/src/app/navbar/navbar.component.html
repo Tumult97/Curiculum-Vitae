@@ -14,9 +14,12 @@
         <li class="nav-item" [ngClass]="{'selected': route == 'edu'}">
           <a class="nav-link waves-light" (click)="navClick('edu')" mdbWavesEffect routerLink="/education"><mdb-icon fas icon="university"></mdb-icon> Educational Background</a>
         </li>
-        <li class="nav-item" [ngClass]="{'selected': route == 'work'}">
-          <a class="nav-link waves-light" (click)="navClick('work')" mdbWavesEffect routerLink="/employment"><mdb-icon fas icon="briefcase"></mdb-icon> Work History</a>
-        </li>
+          <li class="nav-item" [ngClass]="{'selected': route == 'work'}">
+              <a class="nav-link waves-light" (click)="navClick('work')" mdbWavesEffect routerLink="/employment"><mdb-icon fas icon="briefcase"></mdb-icon> Work History</a>
+          </li>
+          <li class="nav-item" [ngClass]="{'selected': route == 'hobby'}">
+              <a class="nav-link waves-light" (click)="navClick('hobby')" mdbWavesEffect routerLink="/hobbies"><mdb-icon fas icon="crosshairs"></mdb-icon> Hobbies</a>
+          </li>
       </ul>
     </div>
   </div>
