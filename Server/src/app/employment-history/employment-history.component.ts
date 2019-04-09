@@ -6,34 +6,12 @@ import {Component, OnInit} from '@angular/core';
     styleUrls: ['./employment-history.component.scss']
 })
 export class EmploymentHistoryComponent implements OnInit {
-    history: Array<object>;
+    history: object[];
 
     constructor() {
     }
 
     ngOnInit() {
-        this.history.push({
-            company: 'Blue Ocean pty ltd',
-            address: 'Shop F2 \n' +
-                'Bedford Square \n' +
-                'Bedfordview \n' +
-                'Germiston',
-            referee: {
-                fname: 'Eric',
-                lname: 'Huang',
-                contact: '0112345678'
-            },
-            title: 'Floor assistant',
-            responsibilities: [
-                'Assist customers',
-                'Setup for events',
-                'Advertise',
-                'Clean',
-                'Help with customers and young children',
-                'Maintain and troubleshoot Computers and Gear'
-            ]
-        });
-
         this.history.push({
             company: 'Netgen software solutions',
             address: 'Office 1 \n' +
@@ -54,6 +32,28 @@ export class EmploymentHistoryComponent implements OnInit {
                 'Interact with clients',
                 'Assist in deploying software solutions and updates',
                 'Research new technology and new methods of accomplishing tasks'
+            ]
+        });
+
+        this.history.push({
+            company: 'Blue Ocean pty ltd',
+            address: 'Shop F2 \n' +
+                'Bedford Square \n' +
+                'Bedfordview \n' +
+                'Germiston',
+            referee: {
+                fname: 'Eric',
+                lname: 'Huang',
+                contact: '0112345678'
+            },
+            title: 'Floor assistant',
+            responsibilities: [
+                'Assist customers',
+                'Setup for events',
+                'Advertise',
+                'Clean',
+                'Help with customers and young children',
+                'Maintain and troubleshoot Computers and Gear'
             ]
         });
     }
