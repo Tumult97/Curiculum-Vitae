@@ -6,7 +6,7 @@ import {Component, OnInit} from '@angular/core';
     styleUrls: ['./employment-history.component.scss']
 })
 export class EmploymentHistoryComponent implements OnInit {
-    history: object[];
+    history: object[] = [];
 
     constructor() {
     }
@@ -14,9 +14,9 @@ export class EmploymentHistoryComponent implements OnInit {
     ngOnInit() {
         this.history.push({
             company: 'Netgen software solutions',
-            address: 'Office 1 \n' +
-                '280 Kent Avenue \n' +
-                'Ferndale \n' +
+            address: 'Office 1 <br />' +
+                '280 Kent Avenue <br />' +
+                'Ferndale <br />' +
                 'Randburg',
             referee: {
                 fname: 'Andrew',
@@ -37,9 +37,9 @@ export class EmploymentHistoryComponent implements OnInit {
 
         this.history.push({
             company: 'Blue Ocean pty ltd',
-            address: 'Shop F2 \n' +
-                'Bedford Square \n' +
-                'Bedfordview \n' +
+            address: 'Shop F2 <br />' +
+                'Bedford Square <br />' +
+                'Bedfordview <br />' +
                 'Germiston',
             referee: {
                 fname: 'Eric',
