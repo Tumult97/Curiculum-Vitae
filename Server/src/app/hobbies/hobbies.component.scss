@@ -1,0 +1,29 @@
+/*#region Tags*/
+
+li {
+    font-size: 1.5em;
+}
+
+table, td, ul {
+    width: 100%;
+    height: 100%;
+}
+
+/*#endregion*/
+
+/*#region Custom Classes*/
+
+.round-image {
+    border-radius: 50%;
+    height: 10em;
+}
+
+.small-cell{
+    text-align: center;
+}
+
+.large-cell{
+    width: 66.67%;
+}
+
+/*#endregion*/
