@@ -1,3 +1,89 @@
-<p>
-  education works!
-</p>
+<div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-2 col-sm-1"></div>
+                    <div class="col-xl-8 col-sm-10">
+                        <table class="table-striped table-dark z-depth-2" style="width: 100%;">
+                            <tr>
+                                <th class="edu-header" style="width: 45%">University</th>
+                                <th></th>
+                                <th class="edu-header" style="width: 45%">HighSchool</th>
+                            </tr>
+                            <tr>
+                                <td class="center-text">Monash University</td>
+                                <th class="center-text table-center"><h6>Institution</h6></th>
+                                <td class="center-text">Northcliff High School</td>
+                            </tr>
+                            <tr>
+                                <td class="center-text">2016 - 2018</td>
+                                <th class="center-text table-center"><h6>Years Studied</h6></th>
+                                <td class="center-text">2010 - 2015</td>
+                            </tr>
+                            <tr>
+                                <td class="center-text">Bachelor of Computer and Information Sciences</td>
+                                <th class="center-text table-center"><h6>Qualification</h6></th>
+                                <td class="center-text">Matriculate</td>
+                            </tr>
+                            <tr>
+                                <td class="center-text">App &amp; Network Development &amp; Business
+                                    Systems
+                                </td>
+                                <th class="center-text table-center"><h6>Specialization</h6></th>
+                                <td class="center-text">Biology | Physical Science | Accounting</td>
+                            </tr>
+                            <tr>
+                                <td class="center-text">144 Peter Rd, Ruimsig, Gauteng, South Africa</td>
+                                <th class="center-text table-center"><h6>Address</h6></th>
+                                <td class="center-text">Mountainview Ave, Northcliff, Gauteng, South Africa</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-xl-2 col-sm-1"></div>
+                </div>
+            </div>
+        </div>
+        <hr class="style-two">
+        <div class="row">
+            <div class="col-lg-2 col-sm-1"></div>
+            <div class="col-lg-8 col-sm-10">
+                <table mdbTable class="z-depth-2">
+                    <thead>
+                    <tr>
+                        <td colspan="3" class="edu-header">
+                            University Academic Record
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="table-left">Unit Code</th>
+                        <th>Title</th>
+                        <th class="table-left">Final Score</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr *ngFor="let unit of universityUnits">
+                        <td class="table-left">{{unit.unitCode}}</td>
+                        <td style="width: 50%">{{unit.unitTitle}}</td>
+                        <td class="table-left">
+                            <circle-progress
+                                [animationDuration]="3"
+                                [animation]="true"
+                                [innerStrokeColor]="'#FFF'"
+                                [outerStrokeColor]="'#ffa000'"
+                                [outerStrokeWidth]="2"
+                                [percent]="unit.finalScore"
+                                [radius]="15"
+                                [showSubtitle]="false"
+                                [showUnits]="false"
+                                [titleFontSize]="13"
+                            ></circle-progress>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-2 col-sm-1"></div>
+        </div>
+    </div>
+</div>
