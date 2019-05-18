@@ -1,3 +1,53 @@
-<p>
-  employment-history works!
-</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xl-2 col-lg-1"></div>
+        <div class="col-xl-8 col-lg-10 col-md-12">
+            <table class="table table-striped">
+                <tr>
+                    <th>
+                        Title
+                    </th>
+                    <td *ngFor="let job of history">
+                        {{job.title}}
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Responsibilities
+                    </th>
+                    <td *ngFor="let job of history">
+                        <li *ngFor="let item of job.responsibilities">
+                            {{item}}
+                        </li>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Company
+                    </th>
+                    <td *ngFor="let job of history">
+                        {{job.company}}
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Address
+                    </th>
+                    <td *ngFor="let job of history">
+                        <label [innerHTML]="job.address" ></label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Referee
+                    </th>
+                    <td *ngFor="let job of history">
+                        <div>{{job.referee.fname}} {{job.referee.lname}}</div>
+                        <div>{{job.referee.contact}}</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-xl-2 col-lg-1"></div>
+    </div>
+</div>

@@ -8,6 +8,26 @@ import { HighlightResult } from 'ngx-highlightjs';
 })
 export class HardSkillsComponent implements OnInit {
   /*#region Code Samples*/
+  nodeCode = 'const express = require("express");\n' +
+    'const mongodb = require("mongodb");\n' +
+    'const mongoose = require("mongoose");\n' +
+    'const url = "mongodb://localhost:27017/EpicTimeUserAccounts";\n' +
+    'const app = express();\n' +
+    'mongoose.connect(url, {useNewUrlParser: true}, err => {\n' +
+    '    if (err) return console.log("MongoDB connection error: " + err);\n' +
+    '});';
+
+  nodeBackEnd = 'app.get(\'/dashboard/:username\', (req, res) => {\n' +
+    '    Task.find({user: req.params.username}, (err, data) => {\n' +
+    '        if(err)\n' +
+    '            return res.json(\'Cannot retrieve from database\')\n' +
+    '        if(!data) \n' +
+    '            return res.status(404).json();\n' +
+    '        \n' +
+    '        res.json(data);\n' +
+    '    });\n' +
+    '});';
+
   javacode = 'public static void main(String[] args) {\n' +
     '    int num = 100, sum = 0;\n' +
     '    for(int i = 1; i <= num; ++i)\n' +

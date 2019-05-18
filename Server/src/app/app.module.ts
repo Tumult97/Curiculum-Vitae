@@ -32,6 +32,7 @@ import cs from 'highlight.js/lib/languages/cs';
 import typescript from 'highlight.js/lib/languages/typescript';
 import vbnet from 'highlight.js/lib/languages/vbnet';
 import vbscript from 'highlight.js/lib/languages/vbscript';
+import {NgCircleProgressModule} from 'ng-circle-progress';
 
 export function hljsLanguages() {
   return [
@@ -79,6 +80,14 @@ export function hljsLanguages() {
     MatToolbarModule,
     HighlightModule.forRoot({
       languages: hljsLanguages
+    }),
+    NgCircleProgressModule.forRoot({
+      radius: 100,
+      outerStrokeWidth: 16,
+      innerStrokeWidth: 8,
+      outerStrokeColor: '#78C000',
+      innerStrokeColor: '#C7E596',
+      animationDuration: 300,
     })
   ],
   exports: [
